@@ -1,6 +1,7 @@
 # Created by https://www.gitignore.io
 
 ### OSX ###
+envdjango
 .DS_Store
 .AppleDouble
 .LSOverride
