@@ -1,0 +1,14 @@
+http://127.0.0.1:8000/admin
+
+#python manage.py makemigrations
+
+than
+
+python manage.py migrate
+
+начало работы
+
+python manage.py createsuperuser
+
+LANGUAGE_CODE='ru'
+

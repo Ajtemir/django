@@ -1,0 +1,20 @@
+pip install virtualenv
+virtualenv --python=C:\Python37\python.exe .
+
+or 
+
+virtualenv venv
+
+pip freeze
+list of framework
+
+source venv/Scripts/activate
+pip list
+
+python -m venv env
+
+deactivate
+
+pip install django==2.2.*
+pip install django==3.1.*
+

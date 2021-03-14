@@ -1,0 +1,121 @@
+syntevo
+smartgit
+
+gitHowTo
+
+github.com
+
+git init
+#начало
+
+git config --local user.name "Ivan"
+git config --local user.email example@gmail.com
+#local and global
+git config --global user.name "Ajtemir"
+git config --global user.email ajtemirulanbekuulu@gmail.com
+
+git status
+
+git add -A
+#есть слежение
+
+git add main.css
+#определенный
+
+git commit -a -m"first commit"
+
+git log
+#когда были коммиты
+
+git remote add origin https://github.com/Ajtemir/experiment.git
+git branch -M main
+git push -u origin main
+#eсли у вас уже есть гит
+
+echo "# dgh" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Ajtemir/dgh.git
+git push -u origin main
+#если нет
+
+git push
+#автоматическая пуш
+
+git clone #ссылка #имя папки
+#клонирование
+
+git pull
+#рабочий обратно
+
+del /F /S /Q /A .git
+rmdir .git
+
+upload file
+
+если на удаленке есть изменения,сперва пулл потом коммиты
+
+#merge
+fgdgdfrhg
+ctrl+c  * 2
+:wq!
+
+!.gitignore
+/node_modules
+
+git craken
+#удобность
+
+# комментарий — эта строка игнорируется
+# не обрабатывать файлы, имя которых заканчивается на .a
+*.a
+# НО отслеживать файл lib.a, несмотря на то, что мы игнорируем все .a файлы с помощью предыдущего правила
+!lib.a
+# игнорировать только файл TODO находящийся в корневом каталоге, не относится к файлам вида subdir/TODO
+/TODO
+# игнорировать все файлы в каталоге build/
+build/
+# игнорировать doc/notes.txt, но не doc/server/arch.txt
+doc/*.txt
+# игнорировать все .txt файлы в каталоге doc/
+doc/**/*.txt
+
+
+
+# В этом файле можно оставлять комментарии
+# Каждая строчка — это шаблон, по которому происходит игнорирование
+
+# Игнорируется файл в любой директории проекта
+.DS_Store
+
+# Игнорируется директория в любой директории проекта
+node_modules
+
+# Игнорируется директория в корне git-репозитория
+/coverage
+
+# Игнорируются все файлы с расширением sqlite3 в директории db,
+# но не игнорируются такие же файлы внутри любого вложенного каталога в db
+# например, /db/something/lala.sqlite3
+/db/*.sqlite3
+
+# игнорировать все .txt файлы в каталоге doc/
+# на всех уровнях вложенности
+doc/**/*.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

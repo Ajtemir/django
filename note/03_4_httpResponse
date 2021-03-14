@@ -1,0 +1,39 @@
+запуск через терминал
+python manage.py runserver
+
+unicorn
+#если сервер
+
+8000 standart port
+
+python manage.py runserver 8001
+
+from django.http import HttpResponse
+
+def home(request):
+    html='''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ironman</h1>
+</body>
+</html>'''
+    return HttpResponse(html)
+
+from travel.views import home
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('home/',home)
+]
+
+
+
+
+
+
+

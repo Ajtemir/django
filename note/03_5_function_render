@@ -1,0 +1,44 @@
+create html file in templates folder
+home.html
+
+views
+from django.http import HttpResponse
+
+def home(request):
+    name='Aytemir'
+    return HttpResponse(request,'home.html')
+
+urls
+from django.http import HttpResponse
+from django.shortcuts import render
+
+def home(request):
+    name='Aytemir'
+    return render(request,'home.html',{'name':name})
+
+settings
+есть templates
+DIRS
+
+BASE_DIR корень проекта
+BASE_DIR/#folder name
+
+'DIRS': [BASE_DIR.joinpath('templates')],
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ironman <br>
+    {{name}}</h1>
+</body>
+</html>
+
+
+

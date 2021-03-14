@@ -1,0 +1,30 @@
+setting
+src
+venv
+
+python manage.py help
+
+asgi
+#ассинхрон
+
+vsgi
+
+Basedir
+
+secret_key
+
+debug
+#informations of errors
+
+allowed_hosts=[]
+#setting domain name
+
+installed_apps
+
+middleware
+#checking
+
+root_urlconf
+
+templates
+

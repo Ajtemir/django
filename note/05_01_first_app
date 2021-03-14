@@ -1,0 +1,3 @@
+python manage.py startapp citites
+add INSTALLED_APPS
+#IN THE END PUT ,

@@ -1,0 +1,14 @@
+in Models.py
+
+class City(models.Model):
+    name = models.CharField(max_length=100, unique=True, verbose_name='Город')
+
+in apps.py
+class CitiesConfig(AppConfig):
+    name = 'cities'
+    verbose_name = 'Населенные пункты'
+
+in __init__.py
+default_app_config = 'cities.apps.CitiesConfig'
+
+

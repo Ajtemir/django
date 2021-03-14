@@ -1,0 +1,8 @@
+1)запрос с браузера example.com
+2)middleware
+3)urls.py /home /about
+4)views.py def home_view() , def about_view()
+()database
+5)html-site response
+#через мидлвари
+()404.html
